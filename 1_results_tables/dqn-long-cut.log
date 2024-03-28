@@ -1,0 +1,1024 @@
+--- total mse / var(X): 0.408
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.691, 0.691
+--- total mse / var(X): 0.691
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.87090087, 0.7326745, 0.57113755, 0.42489028]
+MSE between final output of the two models: 5.83703088760376
+Cosine Similarities:  [0.87090087, 0.7326745, 0.57113755, 0.42489028]
+n_list:  [4, 1, 4, 1]
+k_list:  [16, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.247, 0.262
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.289, 0.28
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.291, 0.291
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.226, 0.219
+--- total mse / var(X): 0.263
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.653, 0.653
+--- total mse / var(X): 0.653
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.392, 0.304
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.435, 0.102
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.4, 0.692
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.391, 0.493
+--- total mse / var(X): 0.397
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.703, 0.703
+--- total mse / var(X): 0.703
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.86931044, 0.719117, 0.5468682, 0.32854456]
+MSE between final output of the two models: 8.295969009399414
+Cosine Similarities:  [0.86931044, 0.719117, 0.5468682, 0.32854456]
+n_list:  [4, 1, 4, 1]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.244, 0.257
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.286, 0.278
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.275, 0.277
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.228, 0.222
+--- total mse / var(X): 0.258
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.576, 0.576
+--- total mse / var(X): 0.576
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.389, 0.299
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.324, 0.115
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.434, 0.738
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.431, 0.506
+--- total mse / var(X): 0.415
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.738, 0.738
+--- total mse / var(X): 0.738
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.87018734, 0.76169115, 0.58792526, 0.4227007]
+MSE between final output of the two models: 5.31698751449585
+Cosine Similarities:  [0.87018734, 0.76169115, 0.58792526, 0.4227007]
+n_list:  [4, 1, 4, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.238, 0.251
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.289, 0.28
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.286, 0.288
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.221, 0.215
+--- total mse / var(X): 0.258
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.58, 0.58
+--- total mse / var(X): 0.58
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.413, 0.309
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.431, 0.126
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.415, 0.717
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.396, 0.487
+--- total mse / var(X): 0.41
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.72, 0.838
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.63, 0.527
+--- total mse / var(X): 0.682
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.8752973, 0.7565438, 0.57708305, 0.37351403]
+MSE between final output of the two models: 6.1207685470581055
+Cosine Similarities:  [0.8752973, 0.7565438, 0.57708305, 0.37351403]
+n_list:  [4, 1, 8, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.243, 0.258
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.284, 0.277
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.282, 0.283
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.229, 0.219
+--- total mse / var(X): 0.259
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.583, 0.583
+--- total mse / var(X): 0.583
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.395, 0.035
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.386, 0.563
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.336, 0.179
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.227, 0.0263
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.39, 0.814
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.23, 0.356
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.41, 0.207
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.294, 0.49
+--- total mse / var(X): 0.334
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.73, 0.84
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.687, 0.584
+--- total mse / var(X): 0.712
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.87386966, 0.76825327, 0.6195594, 0.506367]
+MSE between final output of the two models: 4.717082500457764
+Cosine Similarities:  [0.87386966, 0.76825327, 0.6195594, 0.506367]
+n_list:  [4, 1, 8, 1]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.243, 0.257
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.283, 0.275
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.281, 0.283
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.225, 0.217
+--- total mse / var(X): 0.258
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.567, 0.567
+--- total mse / var(X): 0.567
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.406, 0.0401
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.371, 0.54
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.354, 0.163
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.206, 0.0262
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.358, 0.709
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.196, 0.292
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.38, 0.175
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.288, 0.556
+--- total mse / var(X): 0.313
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.672, 0.672
+--- total mse / var(X): 0.672
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.86721635, 0.75474787, 0.6229375, 0.52177316]
+MSE between final output of the two models: 4.6520867347717285
+Cosine Similarities:  [0.86721635, 0.75474787, 0.6229375, 0.52177316]
+n_list:  [8, 1, 8, 1]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.165, 0.179
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.159, 0.163
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.234, 0.222
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.189, 0.187
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.179, 0.179
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.218, 0.199
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.158, 0.165
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.173, 0.172
+--- total mse / var(X): 0.183
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.601, 0.601
+--- total mse / var(X): 0.601
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.328, 0.0533
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.389, 0.564
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.286, 0.139
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.217, 0.0172
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.407, 0.912
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.227, 0.303
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.427, 0.225
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.309, 0.53
+--- total mse / var(X): 0.343
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.712, 0.712
+--- total mse / var(X): 0.712
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.92546463, 0.79164803, 0.6617453, 0.4672926]
+MSE between final output of the two models: 6.643632411956787
+Cosine Similarities:  [0.92546463, 0.79164803, 0.6617453, 0.4672926]
+n_list:  [8, 1, 8, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.174, 0.186
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.158, 0.161
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.241, 0.228
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.184, 0.181
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.176, 0.176
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.219, 0.201
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.156, 0.165
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.158, 0.158
+--- total mse / var(X): 0.182
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.59, 0.59
+--- total mse / var(X): 0.59
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.352, 0.0387
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.399, 0.57
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.343, 0.124
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.196, 0.0216
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.392, 0.88
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.243, 0.349
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.438, 0.214
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.304, 0.554
+--- total mse / var(X): 0.344
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.72, 0.797
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.647, 0.578
+--- total mse / var(X): 0.687
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.92595935, 0.79105896, 0.65455955, 0.46403104]
+MSE between final output of the two models: 4.824533462524414
+Cosine Similarities:  [0.92595935, 0.79105896, 0.65455955, 0.46403104]
+n_list:  [8, 2, 8, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.174, 0.19
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.154, 0.16
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.242, 0.231
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.186, 0.183
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.178, 0.177
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.218, 0.199
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.158, 0.164
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.156, 0.154
+--- total mse / var(X): 0.182
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.499, 0.562
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.6, 0.524
+--- total mse / var(X): 0.543
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.487, 0.0582
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.394, 0.678
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.342, 0.179
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.215, 0.024
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.384, 0.819
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.238, 0.308
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.358, 0.227
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.359, 0.526
+--- total mse / var(X): 0.352
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.728, 0.874
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.711, 0.568
+--- total mse / var(X): 0.721
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.925478, 0.83048743, 0.6778667, 0.44458485]
+MSE between final output of the two models: 5.691443920135498
+Cosine Similarities:  [0.925478, 0.83048743, 0.6778667, 0.44458485]
+n_list:  [8, 2, 8, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.168, 0.184
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.163, 0.169
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.23, 0.22
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.187, 0.184
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.175, 0.175
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.217, 0.197
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.16, 0.166
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.156, 0.154
+--- total mse / var(X): 0.181
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.488, 0.556
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.586, 0.504
+--- total mse / var(X): 0.53
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.501, 0.0502
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.353, 0.611
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.345, 0.172
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.201, 0.0224
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.369, 0.742
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.206, 0.283
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.382, 0.203
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.309, 0.509
+--- total mse / var(X): 0.324
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.666, 0.792
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.657, 0.533
+--- total mse / var(X): 0.662
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.924892, 0.82593995, 0.67838764, 0.5632827]
+MSE between final output of the two models: 3.9976565837860107
+Cosine Similarities:  [0.924892, 0.82593995, 0.67838764, 0.5632827]
+n_list:  [8, 2, 4, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.177, 0.193
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.157, 0.162
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.235, 0.224
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.182, 0.181
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.179, 0.18
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.215, 0.196
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.162, 0.168
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.162, 0.158
+--- total mse / var(X): 0.183
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.49, 0.575
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.593, 0.491
+--- total mse / var(X): 0.533
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.406, 0.372
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.388, 0.123
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.426, 0.72
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.426, 0.459
+--- total mse / var(X): 0.418
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.702, 0.866
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.679, 0.52
+--- total mse / var(X): 0.693
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.92456657, 0.8320437, 0.63493466, 0.49652687]
+MSE between final output of the two models: 4.596829414367676
+Cosine Similarities:  [0.92456657, 0.8320437, 0.63493466, 0.49652687]
+n_list:  [8, 1, 4, 2]
+k_list:  [16, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.165, 0.181
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.157, 0.164
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.234, 0.224
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.178, 0.177
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.181, 0.182
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.225, 0.203
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.156, 0.16
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.166, 0.161
+--- total mse / var(X): 0.182
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.585, 0.585
+--- total mse / var(X): 0.585
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.394, 0.325
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.286, 0.0847
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.459, 0.833
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.412, 0.438
+--- total mse / var(X): 0.42
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.666, 0.8
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.664, 0.531
+--- total mse / var(X): 0.665
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.92467445, 0.79704875, 0.64513916, 0.59804]
+MSE between final output of the two models: 3.9252076148986816
+Cosine Similarities:  [0.92467445, 0.79704875, 0.64513916, 0.59804]
+n_list:  [8, 1, 4, 2]
+k_list:  [16, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.168, 0.183
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.151, 0.155
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.234, 0.223
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.186, 0.185
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.174, 0.173
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.215, 0.196
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.155, 0.161
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.156, 0.154
+--- total mse / var(X): 0.179
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.594, 0.594
+--- total mse / var(X): 0.594
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.343, 0.266
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.344, 0.115
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.356, 0.591
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.329, 0.405
+--- total mse / var(X): 0.344
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.674, 0.819
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.655, 0.513
+--- total mse / var(X): 0.666
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.926303, 0.78609675, 0.6314691, 0.47678363]
+MSE between final output of the two models: 4.849438190460205
+Cosine Similarities:  [0.926303, 0.78609675, 0.6314691, 0.47678363]
+n_list:  [8, 1, 4, 1]
+k_list:  [16, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.163, 0.18
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.147, 0.154
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.226, 0.218
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.179, 0.178
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.178, 0.179
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.217, 0.196
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.165, 0.168
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.169, 0.163
+--- total mse / var(X): 0.18
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.592, 0.592
+--- total mse / var(X): 0.592
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.331, 0.272
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.275, 0.0738
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.371, 0.662
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.355, 0.399
+--- total mse / var(X): 0.352
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.663, 0.663
+--- total mse / var(X): 0.663
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9247025, 0.78727704, 0.6499924, 0.60980344]
+MSE between final output of the two models: 3.7049615383148193
+Cosine Similarities:  [0.9247025, 0.78727704, 0.6499924, 0.60980344]
+n_list:  [8, 1, 4, 1]
+k_list:  [16, 32, 64, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.168, 0.183
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.152, 0.157
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.23, 0.219
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.179, 0.176
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.173, 0.173
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.211, 0.192
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.156, 0.163
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.155, 0.153
+--- total mse / var(X): 0.177
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.587, 0.587
+--- total mse / var(X): 0.587
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.294, 0.244
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.235, 0.0579
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.292, 0.517
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.286, 0.328
+--- total mse / var(X): 0.287
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.686, 0.686
+--- total mse / var(X): 0.686
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.92459834, 0.7922281, 0.6709742, 0.4063576]
+MSE between final output of the two models: 8.552325248718262
+Cosine Similarities:  [0.92459834, 0.7922281, 0.6709742, 0.4063576]
+n_list:  [16, 1, 4, 1]
+k_list:  [16, 32, 64, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.125, 0.135
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.12, 0.135
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0901, 0.0863
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.135, 0.153
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.124, 0.107
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.166, 0.176
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.143, 0.156
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.122, 0.109
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.139, 0.158
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.129, 0.112
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.177, 0.182
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0905, 0.0705
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.115, 0.116
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.109, 0.114
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.114, 0.113
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.117, 0.11
+--- total mse / var(X): 0.127
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.618, 0.618
+--- total mse / var(X): 0.618
+running kmeans in subspace 1/4... mse / {var(X_subs), var(X)}: 0.257, 0.237
+running kmeans in subspace 2/4... mse / {var(X_subs), var(X)}: 0.19, 0.0444
+running kmeans in subspace 3/4... mse / {var(X_subs), var(X)}: 0.31, 0.548
+running kmeans in subspace 4/4... mse / {var(X_subs), var(X)}: 0.303, 0.325
+--- total mse / var(X): 0.289
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.734, 0.734
+--- total mse / var(X): 0.734
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9524993, 0.7887861, 0.61563474, 0.4341902]
+MSE between final output of the two models: 5.153624057769775
+Cosine Similarities:  [0.9524993, 0.7887861, 0.61563474, 0.4341902]
+n_list:  [16, 1, 2, 1]
+k_list:  [16, 32, 64, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.126, 0.135
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.121, 0.136
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0942, 0.0896
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.137, 0.154
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.124, 0.106
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.171, 0.181
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.141, 0.153
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.122, 0.109
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.138, 0.156
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.123, 0.106
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.176, 0.181
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0884, 0.0695
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.115, 0.116
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.111, 0.117
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.115, 0.115
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.117, 0.111
+--- total mse / var(X): 0.127
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.614, 0.614
+--- total mse / var(X): 0.614
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.317, 0.176
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.371, 0.535
+--- total mse / var(X): 0.356
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.716, 0.716
+--- total mse / var(X): 0.716
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9525355, 0.7863209, 0.57935387, 0.33780193]
+MSE between final output of the two models: 8.236808776855469
+Cosine Similarities:  [0.9525355, 0.7863209, 0.57935387, 0.33780193]
+n_list:  [16, 1, 2, 1]
+k_list:  [16, 32, 64, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.122, 0.13
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.122, 0.136
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0889, 0.0835
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.135, 0.151
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.12, 0.102
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.161, 0.17
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.136, 0.147
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.116, 0.103
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.136, 0.153
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.12, 0.104
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.169, 0.174
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0865, 0.0688
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.111, 0.114
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.108, 0.115
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.111, 0.112
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.114, 0.11
+--- total mse / var(X): 0.123
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.608, 0.608
+--- total mse / var(X): 0.608
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.338, 0.18
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.369, 0.541
+--- total mse / var(X): 0.361
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.745, 0.745
+--- total mse / var(X): 0.745
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9516672, 0.7900077, 0.6023912, 0.41043553]
+MSE between final output of the two models: 6.268548011779785
+Cosine Similarities:  [0.9516672, 0.7900077, 0.6023912, 0.41043553]
+n_list:  [16, 1, 2, 1]
+k_list:  [16, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.124, 0.13
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.122, 0.134
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0903, 0.0842
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.136, 0.151
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.121, 0.102
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.164, 0.172
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.138, 0.149
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.119, 0.105
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.133, 0.15
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.127, 0.108
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.168, 0.173
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0846, 0.0686
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.109, 0.114
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.106, 0.115
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.109, 0.112
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.117, 0.115
+--- total mse / var(X): 0.124
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.604, 0.604
+--- total mse / var(X): 0.604
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.363, 0.187
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.414, 0.615
+--- total mse / var(X): 0.401
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.711, 0.711
+--- total mse / var(X): 0.711
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.95282996, 0.7807983, 0.5821217, 0.3771768]
+MSE between final output of the two models: 7.031774997711182
+Cosine Similarities:  [0.95282996, 0.7807983, 0.5821217, 0.3771768]
+n_list:  [16, 1, 1, 1]
+k_list:  [16, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.123, 0.132
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.116, 0.13
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0898, 0.0851
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.132, 0.149
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.118, 0.101
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.159, 0.168
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.136, 0.148
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.116, 0.104
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.134, 0.153
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.12, 0.105
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.171, 0.177
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0882, 0.0691
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.109, 0.11
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.108, 0.114
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.112, 0.112
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.113, 0.108
+--- total mse / var(X): 0.123
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.612, 0.612
+--- total mse / var(X): 0.612
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.448, 0.448
+--- total mse / var(X): 0.448
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.713, 0.713
+--- total mse / var(X): 0.713
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9527633, 0.79108244, 0.57188916, 0.5510707]
+MSE between final output of the two models: 6.4987006187438965
+Cosine Similarities:  [0.9527633, 0.79108244, 0.57188916, 0.5510707]
+n_list:  [16, 2, 1, 1]
+k_list:  [16, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.126, 0.133
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.123, 0.136
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0879, 0.0826
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.138, 0.154
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.124, 0.105
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.165, 0.175
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.141, 0.155
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.121, 0.109
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.137, 0.157
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.121, 0.106
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.172, 0.178
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0932, 0.0732
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.112, 0.114
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.108, 0.114
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.12, 0.12
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.12, 0.114
+--- total mse / var(X): 0.127
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.526, 0.591
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.62, 0.543
+--- total mse / var(X): 0.567
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.451, 0.451
+--- total mse / var(X): 0.451
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.743, 0.743
+--- total mse / var(X): 0.743
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.95091164, 0.82719505, 0.5570012, 0.35705382]
+MSE between final output of the two models: 14.77413272857666
+Cosine Similarities:  [0.95091164, 0.82719505, 0.5570012, 0.35705382]
+n_list:  [16, 2, 1, 1]
+k_list:  [32, 32, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0754, 0.0812
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0741, 0.0834
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0507, 0.0482
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.0873, 0.0986
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.0713, 0.0612
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.109, 0.115
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0883, 0.0954
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0714, 0.0633
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.085, 0.0957
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.0744, 0.0639
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.11, 0.113
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0526, 0.0416
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.0722, 0.0734
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0705, 0.0746
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0708, 0.0712
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0755, 0.0722
+--- total mse / var(X): 0.0782
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.501, 0.563
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.603, 0.528
+--- total mse / var(X): 0.546
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.447, 0.447
+--- total mse / var(X): 0.447
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.715, 0.715
+--- total mse / var(X): 0.715
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.967065, 0.83857584, 0.58871835, 0.40214032]
+MSE between final output of the two models: 6.251077175140381
+Cosine Similarities:  [0.967065, 0.83857584, 0.58871835, 0.40214032]
+n_list:  [16, 2, 1, 1]
+k_list:  [32, 16, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0811, 0.0881
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0778, 0.0883
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0536, 0.0515
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.0906, 0.103
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.0782, 0.0677
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.115, 0.122
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0937, 0.102
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0752, 0.0673
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.0886, 0.101
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.0799, 0.0693
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.119, 0.122
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0582, 0.0451
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.0776, 0.0773
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0782, 0.0812
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0786, 0.0775
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0817, 0.0764
+--- total mse / var(X): 0.0838
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.591, 0.657
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.673, 0.598
+--- total mse / var(X): 0.628
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.428, 0.428
+--- total mse / var(X): 0.428
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.718, 0.718
+--- total mse / var(X): 0.718
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.96627945, 0.8049768, 0.57984143, 0.37723276]
+MSE between final output of the two models: 10.245087623596191
+Cosine Similarities:  [0.96627945, 0.8049768, 0.57984143, 0.37723276]
+n_list:  [16, 2, 1, 2]
+k_list:  [32, 16, 32, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0851, 0.0903
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0846, 0.094
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0554, 0.0523
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.0904, 0.101
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.0786, 0.0669
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.112, 0.119
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0915, 0.0998
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0772, 0.0694
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.0897, 0.103
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.08, 0.0697
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.111, 0.115
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0592, 0.0465
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.0787, 0.0798
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0765, 0.0809
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0815, 0.0819
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0774, 0.0738
+--- total mse / var(X): 0.0839
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.587, 0.651
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.677, 0.604
+--- total mse / var(X): 0.627
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.437, 0.437
+--- total mse / var(X): 0.437
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.712, 0.913
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.686, 0.493
+--- total mse / var(X): 0.703
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.96657497, 0.809649, 0.5991884, 0.42103225]
+MSE between final output of the two models: 5.426733493804932
+Cosine Similarities:  [0.96657497, 0.809649, 0.5991884, 0.42103225]
+n_list:  [16, 2, 1, 2]
+k_list:  [32, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0801, 0.086
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0783, 0.0879
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0517, 0.0492
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.087, 0.0983
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.0735, 0.0631
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.109, 0.115
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0885, 0.0957
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.074, 0.0657
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.0868, 0.098
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.0753, 0.0649
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.112, 0.115
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0536, 0.0422
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.073, 0.0741
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0729, 0.077
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.075, 0.0754
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0772, 0.0738
+--- total mse / var(X): 0.0801
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.588, 0.657
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.671, 0.592
+--- total mse / var(X): 0.624
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.507, 0.507
+--- total mse / var(X): 0.507
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.698, 0.925
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.713, 0.481
+--- total mse / var(X): 0.703
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.96695065, 0.80369025, 0.5474157, 0.355492]
+MSE between final output of the two models: 7.776805877685547
+Cosine Similarities:  [0.96695065, 0.80369025, 0.5474157, 0.355492]
+n_list:  [16, 2, 1, 2]
+k_list:  [32, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0843, 0.0896
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0795, 0.0885
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0548, 0.0517
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.0907, 0.102
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.078, 0.0662
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.111, 0.118
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0899, 0.0984
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0727, 0.0654
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.09, 0.103
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.0758, 0.0661
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.112, 0.116
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0548, 0.0431
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.076, 0.0769
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0746, 0.0788
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0777, 0.0779
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0808, 0.0768
+--- total mse / var(X): 0.0824
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.507, 0.569
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.606, 0.532
+--- total mse / var(X): 0.551
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.517, 0.517
+--- total mse / var(X): 0.517
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.709, 0.903
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.697, 0.506
+--- total mse / var(X): 0.705
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9667335, 0.83801, 0.5787357, 0.41913036]
+MSE between final output of the two models: 5.34541654586792
+Cosine Similarities:  [0.9667335, 0.83801, 0.5787357, 0.41913036]
+n_list:  [16, 2, 2, 2]
+k_list:  [32, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0825, 0.0875
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0818, 0.0912
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0534, 0.0506
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.0905, 0.102
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.08, 0.0686
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.114, 0.121
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0942, 0.103
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0787, 0.0709
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.089, 0.102
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.077, 0.0675
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.115, 0.12
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0554, 0.043
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.0767, 0.077
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0768, 0.0803
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0746, 0.0744
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0758, 0.072
+--- total mse / var(X): 0.0832
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.511, 0.577
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.613, 0.533
+--- total mse / var(X): 0.555
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.462, 0.3
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.525, 0.709
+--- total mse / var(X): 0.504
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.738, 0.941
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.709, 0.513
+--- total mse / var(X): 0.727
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9668793, 0.8422095, 0.56696224, 0.3938332]
+MSE between final output of the two models: 7.512105941772461
+Cosine Similarities:  [0.9668793, 0.8422095, 0.56696224, 0.3938332]
+n_list:  [16, 1, 2, 2]
+k_list:  [32, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/16... mse / {var(X_subs), var(X)}: 0.0807, 0.0864
+running kmeans in subspace 2/16... mse / {var(X_subs), var(X)}: 0.0792, 0.0886
+running kmeans in subspace 3/16... mse / {var(X_subs), var(X)}: 0.0542, 0.0512
+running kmeans in subspace 4/16... mse / {var(X_subs), var(X)}: 0.087, 0.098
+running kmeans in subspace 5/16... mse / {var(X_subs), var(X)}: 0.0752, 0.0645
+running kmeans in subspace 6/16... mse / {var(X_subs), var(X)}: 0.11, 0.116
+running kmeans in subspace 7/16... mse / {var(X_subs), var(X)}: 0.0892, 0.0969
+running kmeans in subspace 8/16... mse / {var(X_subs), var(X)}: 0.0766, 0.0684
+running kmeans in subspace 9/16... mse / {var(X_subs), var(X)}: 0.0886, 0.101
+running kmeans in subspace 10/16... mse / {var(X_subs), var(X)}: 0.0767, 0.0665
+running kmeans in subspace 11/16... mse / {var(X_subs), var(X)}: 0.112, 0.116
+running kmeans in subspace 12/16... mse / {var(X_subs), var(X)}: 0.0548, 0.0431
+running kmeans in subspace 13/16... mse / {var(X_subs), var(X)}: 0.0755, 0.0763
+running kmeans in subspace 14/16... mse / {var(X_subs), var(X)}: 0.0723, 0.0761
+running kmeans in subspace 15/16... mse / {var(X_subs), var(X)}: 0.0763, 0.0765
+running kmeans in subspace 16/16... mse / {var(X_subs), var(X)}: 0.0774, 0.0739
+--- total mse / var(X): 0.0812
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.606, 0.606
+--- total mse / var(X): 0.606
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.447, 0.244
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.513, 0.746
+--- total mse / var(X): 0.495
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.722, 0.917
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.678, 0.495
+--- total mse / var(X): 0.706
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.96712637, 0.7901161, 0.5582218, 0.42487502]
+MSE between final output of the two models: 5.379034042358398
+Cosine Similarities:  [0.96712637, 0.7901161, 0.5582218, 0.42487502]
+n_list:  [8, 1, 2, 2]
+k_list:  [32, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.128, 0.139
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.119, 0.122
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.181, 0.172
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.138, 0.138
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.13, 0.131
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.17, 0.155
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.119, 0.122
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.124, 0.121
+--- total mse / var(X): 0.137
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.597, 0.597
+--- total mse / var(X): 0.597
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.458, 0.261
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.511, 0.731
+--- total mse / var(X): 0.496
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.68, 0.834
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.652, 0.504
+--- total mse / var(X): 0.669
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.94687814, 0.791817, 0.60283935, 0.5174068]
+MSE between final output of the two models: 4.428914546966553
+Cosine Similarities:  [0.94687814, 0.791817, 0.60283935, 0.5174068]
+n_list:  [8, 1, 2, 2]
+k_list:  [64, 32, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0903, 0.0977
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0796, 0.0819
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.13, 0.124
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0942, 0.0934
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0939, 0.0944
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.122, 0.111
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0814, 0.0846
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0843, 0.0831
+--- total mse / var(X): 0.0963
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.601, 0.601
+--- total mse / var(X): 0.601
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.462, 0.251
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.529, 0.771
+--- total mse / var(X): 0.511
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.676, 0.83
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.706, 0.546
+--- total mse / var(X): 0.688
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.95899093, 0.7965045, 0.60135967, 0.3766834]
+MSE between final output of the two models: 6.097569465637207
+Cosine Similarities:  [0.95899093, 0.7965045, 0.60135967, 0.3766834]
+n_list:  [8, 1, 2, 2]
+k_list:  [64, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0891, 0.096
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0808, 0.0829
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.127, 0.121
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0898, 0.0889
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0904, 0.0907
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.12, 0.11
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0809, 0.0845
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0807, 0.08
+--- total mse / var(X): 0.0942
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.672, 0.672
+--- total mse / var(X): 0.672
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.423, 0.226
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.493, 0.722
+--- total mse / var(X): 0.474
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.687, 0.85
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.672, 0.513
+--- total mse / var(X): 0.681
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9589423, 0.7638766, 0.5957161, 0.54932725]
+MSE between final output of the two models: 4.138054370880127
+Cosine Similarities:  [0.9589423, 0.7638766, 0.5957161, 0.54932725]
+n_list:  [8, 1, 2, 2]
+k_list:  [64, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0918, 0.0995
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0816, 0.0842
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.128, 0.122
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0955, 0.095
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0936, 0.0945
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.122, 0.111
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0815, 0.0842
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0839, 0.0821
+--- total mse / var(X): 0.0967
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.677, 0.677
+--- total mse / var(X): 0.677
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.428, 0.211
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.5, 0.753
+--- total mse / var(X): 0.482
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.722, 0.879
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.671, 0.526
+--- total mse / var(X): 0.702
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.95832527, 0.7626389, 0.5732288, 0.42226833]
+MSE between final output of the two models: 5.083874702453613
+Cosine Similarities:  [0.95832527, 0.7626389, 0.5732288, 0.42226833]
+n_list:  [8, 1, 2, 2]
+k_list:  [128, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0626, 0.0675
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0573, 0.0586
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.0929, 0.0881
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0669, 0.0661
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.065, 0.065
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.0873, 0.08
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0573, 0.0602
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0597, 0.0594
+--- total mse / var(X): 0.0681
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.672, 0.672
+--- total mse / var(X): 0.672
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.444, 0.231
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.525, 0.777
+--- total mse / var(X): 0.504
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.71, 0.85
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.693, 0.557
+--- total mse / var(X): 0.704
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.96830964, 0.7676986, 0.6106321, 0.4910357]
+MSE between final output of the two models: 4.697912693023682
+Cosine Similarities:  [0.96830964, 0.7676986, 0.6106321, 0.4910357]
+n_list:  [8, 1, 2, 2]
+k_list:  [64, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0865, 0.0942
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0798, 0.0824
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.127, 0.121
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0925, 0.0924
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0909, 0.0917
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.122, 0.111
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0838, 0.0865
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0837, 0.0816
+--- total mse / var(X): 0.095
+running kmeans in subspace 1/1... mse / {var(X_subs), var(X)}: 0.665, 0.665
+--- total mse / var(X): 0.665
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.456, 0.252
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.471, 0.682
+--- total mse / var(X): 0.467
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.671, 0.876
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.666, 0.463
+--- total mse / var(X): 0.669
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9586156, 0.7592688, 0.5829508, 0.44123763]
+MSE between final output of the two models: 4.884450435638428
+Cosine Similarities:  [0.9586156, 0.7592688, 0.5829508, 0.44123763]
+n_list:  [8, 2, 2, 2]
+k_list:  [64, 16, 16, 32]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0869, 0.0939
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0787, 0.0806
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.128, 0.121
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0926, 0.0914
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0895, 0.0892
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.12, 0.11
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0799, 0.084
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0817, 0.0814
+--- total mse / var(X): 0.0939
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.575, 0.656
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.657, 0.565
+--- total mse / var(X): 0.61
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.433, 0.266
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.493, 0.683
+--- total mse / var(X): 0.475
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.681, 0.86
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.679, 0.501
+--- total mse / var(X): 0.68
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9581347, 0.8030417, 0.5934148, 0.37618947]
+MSE between final output of the two models: 6.075677871704102
+Cosine Similarities:  [0.9581347, 0.8030417, 0.5934148, 0.37618947]
+n_list:  [8, 2, 2, 2]
+k_list:  [64, 16, 16, 16]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.0851, 0.0926
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.0769, 0.0794
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.124, 0.118
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.0904, 0.0895
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.0883, 0.0885
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.117, 0.107
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.0807, 0.0838
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.0812, 0.0797
+--- total mse / var(X): 0.0923
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.573, 0.649
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.657, 0.57
+--- total mse / var(X): 0.609
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.449, 0.275
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.504, 0.699
+--- total mse / var(X): 0.487
+running kmeans in subspace 1/2... mse / {var(X_subs), var(X)}: 0.713, 0.917
+running kmeans in subspace 2/2... mse / {var(X_subs), var(X)}: 0.728, 0.52
+--- total mse / var(X): 0.719
+-- STARTING AMM MODEL TESTING --
+Layerwise Cosine Similarity: [0.9587261, 0.80785877, 0.60198164, 0.4361933]
+MSE between final output of the two models: 5.026721000671387
+Cosine Similarities:  [0.9587261, 0.80785877, 0.60198164, 0.4361933]
+n_list:  [8, 2, 2, 2]
+k_list:  [32, 16, 16, 16]
+Files already downloaded and verified
+Files already downloaded and verified
+running kmeans in subspace 1/8... mse / {var(X_subs), var(X)}: 0.118, 0.129
+running kmeans in subspace 2/8... mse / {var(X_subs), var(X)}: 0.107, 0.111
+running kmeans in subspace 3/8... mse / {var(X_subs), var(X)}: 0.168, 0.16
+running kmeans in subspace 4/8... mse / {var(X_subs), var(X)}: 0.125, 0.123
+running kmeans in subspace 5/8... mse / {var(X_subs), var(X)}: 0.124, 0.123
+running kmeans in subspace 6/8... mse / {var(X_subs), var(X)}: 0.158, 0.144
+running kmeans in subspace 7/8... mse / {var(X_subs), var(X)}: 0.11, 0.114
+running kmeans in subspace 8/8... mse / {var(X_subs), var(X)}: 0.114, 0.113
+--- total mse / var(X): 0.127

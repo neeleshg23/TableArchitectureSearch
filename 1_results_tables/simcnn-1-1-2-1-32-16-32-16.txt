@@ -1,0 +1,2 @@
+Layerwise Cosine Similarity: [0.83490884, 0.71058667, 0.5926742, 0.5868201]
+MSE between final output of the two models: 3.9579474925994873
