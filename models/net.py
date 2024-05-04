@@ -1,13 +1,13 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-class SimCNN(nn.Module):
+class Net(nn.Module):
     # Constructor
     def __init__(self, num_classes=10):
-        super(SimCNN, self).__init__()
+        super(Net, self).__init__()
         
         # Our images are RGB, so input channels = 3. We'll apply 12 filters in the first convolutional layer
-        self.conv1 = nn.Conv2d(in_channels=3, out_channels=12, kernel_size=5, stride=1, padding=2)
+        self.conv1 = nn.Conv2d(in_channels=1, out_channels=12, kernel_size=5, stride=1, padding=2)
         
         # We'll apply max pooling with a kernel size of 2
         self.pool = nn.MaxPool2d(kernel_size=2)
@@ -25,7 +25,7 @@ class SimCNN(nn.Module):
         # So our feature tensors are now 8 x 8, and we've generated 16 of them
         # We need to flatten these and feed them to a fully-connected layer
         # to map them to the probability for each class
-        self.fc = nn.Linear(in_features=8 * 8 * 16, out_features=num_classes)
+        self.fc = nn.Linear(in_features=7 * 7 * 16, out_features=num_classes)
 
     def forward(self, x):
         intermediate = []
@@ -46,7 +46,7 @@ class SimCNN(nn.Module):
         x = F.dropout(x, training=self.training)
         
         # Flatten
-        x = x.view(-1, 8 * 8 * 16)
+        x = x.view(-1, 7 * 7 * 16)
         # Feed to fully-connected layer to predict class
         x = self.fc(x)
         intermediate.append(x.detach().cpu().numpy())

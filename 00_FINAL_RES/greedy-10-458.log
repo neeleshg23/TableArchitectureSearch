@@ -1,0 +1,170 @@
+Iteration: 1
+n_list: [1, 2, 2]
+k_list: [13, 9, 5]
+-- Train Accuracy -- 0.99609375
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.935546875
+-- Test Accuracy AMM -- 0.9375
+-- Train MSE --
+Layer 0: 0.0029
+Layer 1: 0.3673
+Layer 2: 0.5652
+Layer 3: 103.4957
+-- Test MSE --
+Layer 0: 0.0036
+Layer 1: 0.3654
+Layer 2: 0.5493
+Layer 3: 96.8465
+Iteration: 2
+n_list: [1, 2, 2]
+k_list: [12, 9, 6]
+-- Train Accuracy -- 0.994140625
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.9453125
+-- Test Accuracy AMM -- 0.94921875
+-- Train MSE --
+Layer 0: 0.0039
+Layer 1: 0.3707
+Layer 2: 0.4816
+Layer 3: 82.0601
+-- Test MSE --
+Layer 0: 0.0045
+Layer 1: 0.3672
+Layer 2: 0.4849
+Layer 3: 81.6910
+Iteration: 3
+n_list: [1, 2, 2]
+k_list: [11, 9, 7]
+-- Train Accuracy -- 0.994140625
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.953125
+-- Test Accuracy AMM -- 0.9609375
+-- Train MSE --
+Layer 0: 0.0052
+Layer 1: 0.3724
+Layer 2: 0.4293
+Layer 3: 65.9360
+-- Test MSE --
+Layer 0: 0.0056
+Layer 1: 0.3676
+Layer 2: 0.4216
+Layer 3: 63.5418
+Iteration: 4
+n_list: [1, 2, 2]
+k_list: [10, 9, 8]
+-- Train Accuracy -- 1.0
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.96484375
+-- Test Accuracy AMM -- 0.966796875
+-- Train MSE --
+Layer 0: 0.0072
+Layer 1: 0.3823
+Layer 2: 0.3723
+Layer 3: 54.9610
+-- Test MSE --
+Layer 0: 0.0073
+Layer 1: 0.3798
+Layer 2: 0.3841
+Layer 3: 57.1185
+Iteration: 5
+n_list: [1, 2, 2]
+k_list: [9, 10, 8]
+-- Train Accuracy -- 0.9921875
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.96484375
+-- Test Accuracy AMM -- 0.9765625
+-- Train MSE --
+Layer 0: 0.0097
+Layer 1: 0.3327
+Layer 2: 0.3664
+Layer 3: 52.6042
+-- Test MSE --
+Layer 0: 0.0097
+Layer 1: 0.3281
+Layer 2: 0.3674
+Layer 3: 50.1486
+Iteration: 6
+n_list: [1, 2, 2]
+k_list: [8, 10, 9]
+-- Train Accuracy -- 0.994140625
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.97265625
+-- Test Accuracy AMM -- 0.9765625
+-- Train MSE --
+Layer 0: 0.0132
+Layer 1: 0.3332
+Layer 2: 0.3250
+Layer 3: 44.0415
+-- Test MSE --
+Layer 0: 0.0136
+Layer 1: 0.3438
+Layer 2: 0.3330
+Layer 3: 43.5742
+Iteration: 7
+n_list: [1, 2, 2]
+k_list: [7, 11, 9]
+-- Train Accuracy -- 0.998046875
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.96875
+-- Test Accuracy AMM -- 0.978515625
+-- Train MSE --
+Layer 0: 0.0184
+Layer 1: 0.3026
+Layer 2: 0.3143
+Layer 3: 40.7492
+-- Test MSE --
+Layer 0: 0.0184
+Layer 1: 0.3181
+Layer 2: 0.3270
+Layer 3: 41.9089
+Iteration: 8
+n_list: [1, 2, 2]
+k_list: [6, 11, 10]
+-- Train Accuracy -- 0.994140625
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.98046875
+-- Test Accuracy AMM -- 0.9765625
+-- Train MSE --
+Layer 0: 0.0271
+Layer 1: 0.3585
+Layer 2: 0.3079
+Layer 3: 40.3014
+-- Test MSE --
+Layer 0: 0.0264
+Layer 1: 0.3627
+Layer 2: 0.3248
+Layer 3: 42.4021
+Iteration: 9
+n_list: [1, 2, 2]
+k_list: [5, 12, 10]
+-- Train Accuracy -- 0.994140625
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.986328125
+-- Test Accuracy AMM -- 0.978515625
+-- Train MSE --
+Layer 0: 0.0402
+Layer 1: 0.3854
+Layer 2: 0.3172
+Layer 3: 43.2790
+-- Test MSE --
+Layer 0: 0.0398
+Layer 1: 0.4039
+Layer 2: 0.3369
+Layer 3: 44.2134
+Iteration: 10
+n_list: [1, 2, 2]
+k_list: [4, 13, 10]
+-- Train Accuracy -- 0.99609375
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.96484375
+-- Test Accuracy AMM -- 0.974609375
+-- Train MSE --
+Layer 0: 0.0769
+Layer 1: 0.5294
+Layer 2: 0.3810
+Layer 3: 52.8560
+-- Test MSE --
+Layer 0: 0.0764
+Layer 1: 0.5551
+Layer 2: 0.3983
+Layer 3: 55.1816

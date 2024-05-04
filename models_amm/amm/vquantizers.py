@@ -6,6 +6,7 @@ import cupy as cp
 import seaborn as sb
 
 from . import product_quantize as pq
+from faiss import Kmeans 
 from .kmeans import kmeans
 # from old_utils import kmeans 
 
@@ -216,7 +217,12 @@ def _learn_centroids(X, ncentroids, ncodebooks, subvect_len):
         end_col = start_col + subvect_len
         X_in = X[:, start_col:end_col]
         # centroids, labels = kmeans(X_in, ncentroids)
-        centroids, labels, sse = kmeans(X_in, ncentroids, return_sse=True)
+        # centroids, labels, sse = kmeans(X_in, ncentroids, return_sse=True)
+        kmeans = Kmeans(d=subvect_len, k=ncentroids, gpu=True)
+        kmeans.train(X_in.get())
+        centroids = cp.asarray(kmeans.centroids)
+        labels = cp.asarray(kmeans.index.search(X_in.get(), 1)[1].flatten())
+        sse = cp.sum((X_in - centroids[labels]) ** 2)
 
         # X_bar = X_in - np.mean(X_in, axis=0)
         # sse_using_mean = np.sum(X_bar * X_bar) + 1e-14

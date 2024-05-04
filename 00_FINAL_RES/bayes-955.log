@@ -1,0 +1,6 @@
+S_values: [2, 0, 3], K_values: [1, 12, 6]
+Train Accuracy: 1.0, Test Accuracy: 0.994140625
+Train Accuracy AMM: 0.232421875, Test Accuracy AMM: 0.302734375
+Train MSE: [0.2761987, 1.4164978, 0.73792017, 139.30983], Test MSE: [0.27199364, 1.3893865, 0.7420104, 141.06924]
+Objective Value: 0.302734375
+

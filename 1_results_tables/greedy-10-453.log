@@ -1,0 +1,17 @@
+Iteration: 1
+n_list: [2, 1, 0]
+k_list: [5, 9, 4]
+-- Train Accuracy -- 0.9921875
+-- Test Accuracy -- 0.994140625
+-- Train Accuracy AMM -- 0.677734375
+-- Test Accuracy AMM -- 0.689453125
+-- Train MSE --
+Layer 0: 0.0176
+Layer 1: 0.4876
+Layer 2: 0.7567
+Layer 3: 168.4864
+-- Test MSE --
+Layer 0: 0.0178
+Layer 1: 0.4973
+Layer 2: 0.7380
+Layer 3: 162.5747

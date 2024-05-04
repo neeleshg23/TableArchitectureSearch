@@ -1,14 +1,18 @@
+#%%
+import argparse
+import json
+import os; 
+os.environ['OMP_NUM_THREADS'] = '128'
+import numpy as np
 import torch
-import torch.optim as optim
-import cupy as cp 
+import torch.multiprocessing
+from sklearn.metrics import accuracy_score
+import torch.multiprocessing
+torch.multiprocessing.set_sharing_strategy('file_system')
 
 from data_loader import get_data
-from train import train, test
-from metrics import layer_cossim 
-
-from models.simcnn import SimCNN
-from models_amm.simcnn_amm import SimCNN_AMM
-
+from models.net import Net
+from models_amm.net_amm import Net_AMM
 from models_amm.amm.kmeans import set_gpu, get_gpu
 
 def split(data_loader):
@@ -20,82 +24,121 @@ def split(data_loader):
     all_targets_tensor = torch.cat(all_targets, dim=0)
     return all_data_tensor, all_targets_tensor
 
+def get_predictions(scores):
+    """Convert continuous scores to binary predictions."""
+    return np.argmax(scores, axis=1)
 
-def train_simcnn():
-    root = "/data/neelesh/CV_Datasets"
-    train_loader, val_loader, test_loader = get_data(root, 'c10')
-    device = torch.device(f'cuda:{get_gpu()}' if torch.cuda.is_available() else 'cpu')
-    model = SimCNN().to(device)
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-    
-    epoch_nums = []
-    training_loss = []
-    validation_loss = []
-    
-    epochs = 50
-    best_dev_loss = 1000
-    for epoch in range(1, epochs + 1):
-        train_loss = train(model, device, train_loader, optimizer, epoch)
-        dev_loss = test(model, device, val_loader)
-        epoch_nums.append(epoch)
-        training_loss.append(train_loss)
-        validation_loss.append(dev_loss)
-        if dev_loss < best_dev_loss:
-            best_dev_loss = dev_loss
-            torch.save(model.state_dict(), '0_results/simcnn_best.pth')
-            
-    
-    print("Best Validation Loss: ", best_dev_loss)
-    print("--Testing--")
-    
-    best_model = SimCNN().to(device)
-    best_model.load_state_dict(torch.load('0_results/simcnn_best.pth')) 
-    best_model.eval()
-    test_loss = test(best_model, device, test_loader)
-    print("Test Loss: ", test_loss)
+VAL_SPLIT = 0
 
-n_train = 500 
-n_test = 500
 
-def main(n_values, k_values):
-    set_gpu(1)
-    root = "/data/neelesh/CV_Datasets"
-    train_loader, val_loader, test_loader = get_data(root, 'c10')
-    device = torch.device(f'cuda:{get_gpu()}' if torch.cuda.is_available() else 'cpu')
-    model = SimCNN().to(device)
-    model.load_state_dict(torch.load('0_results_networks/simcnn_best.pth')) 
-    model.eval()
+
+def run_experiment_mask(model, dataset, ncodebook, kcentroid, config_file=None): 
+    torch.manual_seed(0)
     
+    ncodebook = [pow(2, x) for x in ncodebook]  
+    kcentroid = [pow(2, x) for x in kcentroid]
+
+    train_loader, _, test_loader = get_data('/data3/neelesh/CV_Datasets', dataset, VAL_SPLIT)
     train_data, train_target = split(train_loader)
-    train_data, train_target = train_data[:n_train].to(device), train_target[:n_train].to(device)
-    
-    model_amm = SimCNN_AMM(model.state_dict(), n_values[:], k_values[:]) # send in shallow copies 
-    
-    out_amm = model_amm.forward_train(train_data) 
-    
-    # TEST AMM MODEL
-    print("-- STARTING AMM MODEL TESTING --")
-    
     test_data, test_target = split(test_loader)
-    test_data, test_target = test_data[:n_test].to(device), test_target[:n_test].to(device)
     
-    out, intermediate = model(test_data)
-    out_amm, intermediate_amm = model_amm.forward_eval(test_data)
-    
-    layerwise_cosine_similarity = layer_cossim(intermediate, intermediate_amm) 
+    base_model = Net()
+    base_model.load_state_dict(torch.load(f'0_RES/1_NN/{model}-{dataset}.pth', map_location=torch.device('cpu')))
+    base_model.eval()
 
-    print("Layerwise Cosine Similarity:", layerwise_cosine_similarity)
+    model_amm = Net_AMM(base_model.state_dict(), ncodebook, kcentroid)
     
-    # Get MSE between the final output of the two models
-    mse = torch.nn.functional.mse_loss(out, out_amm)
-    print("MSE between final output of the two models:", mse.item())
+    train_fc2_target, base_intermediate_train = base_model(train_data)
+    test_fc2_target, base_intermediate_test = base_model(test_data)
     
-    # take a snapshot of results and save them to /1_results_tables/simcnn-n1-n2-n3-n4-k1-k2-k3-k4.txt
-    path = '1_results_tables/simcnn-' + "-".join(map(str, n_values)) + "-" + "-".join(map(str, k_values)) + ".txt"
-    with open(path, 'w') as f:
-        f.write(f"Layerwise Cosine Similarity: {layerwise_cosine_similarity}\n")
-        f.write(f"MSE between final output of the two models: {mse.item()}\n")
-
-    return layerwise_cosine_similarity
-
-# main([1, 1, 1, 1], [16, 16, 16, 16]) 
+    print("-- Starting Training -- ") 
+    train_res_amm, amm_intermediate_train = model_amm.forward_train(train_data) 
+    # train_res_amm = model_amm.forward_test(train_data) 
+    # train_res_amm, amm_intermediate_train = model_amm.forward(train_data) 
+    
+    print("-- Starting Evaluation -- ")
+    test_res_amm, amm_intermediate_test = model_amm.forward_eval(test_data)
+    # test_res_amm = model_amm.forward_test(test_data)
+    # test_res_amm, amm_intermediate_test = model_amm.forward(test_data)
+    
+    train_res_amm = train_res_amm.cpu()
+    test_res_amm = test_res_amm.cpu()
+     
+    # get NN accuracy
+    train_pred = get_predictions(train_fc2_target.detach().numpy())
+    test_pred = get_predictions(test_fc2_target.detach().numpy())
+    
+    train_accuracy = accuracy_score(train_target, train_pred)
+    test_accuracy = accuracy_score(test_target, test_pred)
+    
+    print(f'NN - Train accuracy: {train_accuracy}')
+    print(f'NN - Test accuracy: {test_accuracy}')
+    
+    # get AMM accuracy
+    train_pred_amm = get_predictions(train_res_amm)
+    test_pred_amm = get_predictions(test_res_amm)
+    
+    train_accuracy_amm = accuracy_score(train_target, train_pred_amm)
+    test_accuracy_amm = accuracy_score(test_target, test_pred_amm)
+    
+    print(f'AMM - Train accuracy: {train_accuracy_amm}')
+    print(f'AMM - Test accuracy: {test_accuracy_amm}')
+    
+    # get layerwise MSE of intermediate representations
+    train_mse = []
+    test_mse = []
+    
+    for i in range(len(base_intermediate_train)):
+        train_mse.append(((base_intermediate_train[i] - amm_intermediate_train[i])**2).mean())
+        test_mse.append(((base_intermediate_test[i] - amm_intermediate_test[i])**2).mean())
+        
+    print(f'-- Train MSE --')
+    for i, mse in enumerate(train_mse):
+        print(f'Layer {i}: {mse:.4f}')
+        
+    print(f'-- Test MSE --')
+    for i, mse in enumerate(test_mse):
+        print(f'Layer {i}: {mse:.4f}')
+        
+    if config_file is None:
+        return train_accuracy, test_accuracy, train_accuracy_amm, test_accuracy_amm, train_mse, test_mse
+        
+    # save results
+    with open(config_file, 'r') as file:
+        config = json.load(file)
+    config['nn_train_accuracy'] = float(train_accuracy)
+    config['nn_test_accuracy'] = float(test_accuracy)
+    config['amm_train_accuracy'] = float(train_accuracy_amm)
+    config['amm_test_accuracy'] = float(test_accuracy_amm)
+    config['train_mse'] = [float(x) for x in train_mse]
+    config['test_mse'] = [float(x) for x in test_mse]
+    with open(config_file, 'w') as file:
+        json.dump(config, file, indent=4)
+#%%
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model', '-m', type=str, required=True, help='Model abbreviation')
+    parser.add_argument('--dataset', '-d', type=str, required=True, help='Dataset name')
+    parser.add_argument('--config', '-c', type=str, required=True, help='Config file name')
+    parser.add_argument('--gpu', '-g', type=int, default=0, help='GPU number')
+    args = parser.parse_args()
+    
+    set_gpu(args.gpu)
+    
+    config_file = f'{args.config}'
+    
+    with open(config_file, 'r') as file:
+        config = json.load(file)
+    ncodebook = config['s_subspaces']
+    kcentroid = config['k_prototypes']
+    
+    print("-- SUBSPACE VALUES --")
+    print(ncodebook)
+    print("-- PROTOTYPE VALUES --")
+    print(kcentroid)
+    
+    # run the experiment
+    run_experiment_mask(args.model, args.dataset, ncodebook, kcentroid, config_file)
+    
+if __name__ == "__main__":
+    main()

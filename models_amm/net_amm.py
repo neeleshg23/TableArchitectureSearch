@@ -30,21 +30,30 @@ def im2col(input_data, kernel_size, stride, pad):
     col = col.transpose(0, 4, 5, 1, 2, 3).reshape(N*out_h*out_w, -1)
     return col
 
-class SimCNN_AMM:
+class Net_AMM:
     num_layers = 4
     def __init__(self, state_dict, n_list, k_list):
         self.n = n_list
         self.k = k_list
         
         # Extract weights and biases from the state_dict 
-        self.conv1_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv1.weight']))
-        self.conv1_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv1.bias']))
-        self.conv2_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv2.weight']))
-        self.conv2_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv2.bias']))
-        self.conv3_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv3.weight']))
-        self.conv3_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv3.bias']))
-        self.fc_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['fc.weight']))
-        self.fc_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['fc.bias'])) 
+        # self.conv1_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv1.weight']))
+        # self.conv1_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv1.bias']))
+        # self.conv2_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv2.weight']))
+        # self.conv2_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv2.bias']))
+        # self.conv3_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv3.weight']))
+        # self.conv3_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['conv3.bias']))
+        # self.fc_weight = cp.fromDlpack(dlpack.to_dlpack(state_dict['fc.weight']))
+        # self.fc_bias = cp.fromDlpack(dlpack.to_dlpack(state_dict['fc.bias'])) 
+        
+        self.conv1_weight = cp.asarray(state_dict['conv1.weight'])
+        self.conv1_bias = cp.asarray(state_dict['conv1.bias'])
+        self.conv2_weight = cp.asarray(state_dict['conv2.weight'])
+        self.conv2_bias = cp.asarray(state_dict['conv2.bias'])
+        self.conv3_weight = cp.asarray(state_dict['conv3.weight'])
+        self.conv3_bias = cp.asarray(state_dict['conv3.bias'])
+        self.fc_weight = cp.asarray(state_dict['fc.weight'])
+        self.fc_bias = cp.asarray(state_dict['fc.bias'])
         
         self.amm_estimators = []*self.num_layers
     
@@ -72,7 +81,9 @@ class SimCNN_AMM:
 
         col_matrix_2d = col.reshape(-1, col.shape[-1])
         
-        est = PQ_AMM_CNN(self.n.pop(0), self.k.pop(0))  
+        subspace = self.n.pop(0)
+        prototype = self.k.pop(0)
+        est = PQ_AMM_CNN(subspace, prototype)
         est.fit(col_matrix_2d, col_W)
 
         est.reset_for_new_task()
@@ -125,10 +136,8 @@ class SimCNN_AMM:
         return res
     
     
-    # All forward methods expect torch.Tensor in and return torch.Tensor out
-    
     def forward_test(self, x):
-        x = cp.from_dlpack(dlpack.to_dlpack(x))
+        x = cp.asarray(x)
         x = self.conv2d(x, self.conv1_weight, self.conv1_bias, stride=1, pad=2)
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.max_pool2d(x, 2)
@@ -148,34 +157,44 @@ class SimCNN_AMM:
         return x
     
     def forward_train(self, x):
-        x = cp.from_dlpack(dlpack.to_dlpack(x))
+        intermediate = []  # Create a list to store intermediate values
+        x = cp.asarray(x)
         x, est = self.conv2d_amm(x, self.conv1_weight, self.conv1_bias, stride=1, pad=2)
         self.amm_estimators.append(est)
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.max_pool2d(x, 2)
         x = cp.from_dlpack(dlpack.to_dlpack(x))
         x = self.relu(x)
+        intermediate.append(cp.asnumpy(x))  # Store the intermediate value
+
         x, est = self.conv2d_amm(x, self.conv2_weight, self.conv2_bias, stride=1, pad=2)
         self.amm_estimators.append(est)
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.max_pool2d(x, 2)
         x = cp.from_dlpack(dlpack.to_dlpack(x))
         x = self.relu(x)
+        intermediate.append(cp.asnumpy(x))  # Store the intermediate value
+
         x, est = self.conv2d_amm(x, self.conv3_weight, self.conv3_bias, stride=1, pad=1)
         self.amm_estimators.append(est)
         x = self.relu(x)
+        intermediate.append(cp.asnumpy(x))  # Store the intermediate value
+
         # ADD DROP OUT HERE TO PREVENT OVERFITTING
-        x = self.dropout(x, 0.2)
-        x = x.reshape(-1, 8 * 8 * 16)
-        x, est = self.linear_amm(x, self.fc_weight.T, self.fc_bias)
-        self.amm_estimators.append(est)
+        # x = self.dropout(x, 0.2)
+        x = x.reshape(-1, 7 * 7 * 16)
+        # x, est = self.linear_amm(x, self.fc_weight.T, self.fc_bias)
+        # self.amm_estimators.append(est)
+        x = cp.dot(x, self.fc_weight.T) + self.fc_bias  
+        intermediate.append(cp.asnumpy(x))  
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.log_softmax(x, dim=1)
-        return x
-   
+
+        return x, intermediate
+    
     def forward_eval(self, x):
         intermediate = []
-        x = cp.from_dlpack(dlpack.to_dlpack(x))
+        x = cp.asarray(x)
         x = self.conv2d_eval(self.amm_estimators.pop(0), x, self.conv1_weight, self.conv1_bias, stride=1, pad=2)
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.max_pool2d(x, 2)
@@ -191,8 +210,9 @@ class SimCNN_AMM:
         x = self.conv2d_eval(self.amm_estimators.pop(0), x, self.conv3_weight, self.conv3_bias, stride=1, pad=1)
         x = self.relu(x)
         intermediate.append(cp.asnumpy(x))
-        x = x.reshape(-1, 8 * 8 * 16)
-        x = self.linear_eval(self.amm_estimators.pop(0), x, self.fc_weight.T, self.fc_bias)
+        x = x.reshape(-1, 7 * 7 * 16)
+        # x = self.linear_eval(self.amm_estimators.pop(0), x, self.fc_weight.T, self.fc_bias)
+        x = cp.dot(x, self.fc_weight.T) + self.fc_bias
         intermediate.append(cp.asnumpy(x))
         x = torch.from_dlpack(x.toDlpack()).float()
         x = F.log_softmax(x, dim=1)
